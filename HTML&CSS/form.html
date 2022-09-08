@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    input[type=text]{
+        box-sizing:border-box;
+        border:none;
+        padding:12px 20px;
+        margin:8px 0;
+        border-bottom:2px solid black;
+    }
+    
+    #main-div{
+      display: flex;
+      padding:10px;
+      border:solid black;
+      height:500px;
+      overflow-y: scroll;
+    }
+    .left{
+      width:40%;
+
+    }
+    .right{
+      position:fixed;
+      top:2;
+      left:500px;
+      width:800px;
+    }
+    /*.flex-child{
+      flex:1;
+
+    }*/
+    
+    
+    button{
+      color: white;
+      background-color: purple;
+    }
+    .submit{
+      text-align: center;
+      
+    }
+</style>
+<body>
+  <div id="main-div">
+    <div class = "left">
+      <p>1.Your Contact Details</p>
+                <table>
+                    <tr>
+                        <td>
+                            <input type="text" name ="firstname" placeholder="First Name"/>
+                            
+                        </td>
+                        <td>
+                            <input type="text" name ="firstname" placeholder="Patient Id if exists"/>
+                            
+                        </td>
+            
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" name ="firstname" placeholder="Contact Number"/>
+                            
+                        </td>
+                        <td>
+                            <input type="text" name ="firstname" placeholder="Email ID"/>
+                            
+                        </td>
+                    </tr>
+                </table>
+                <p>2.Address</p>
+                <table>
+                    <tr>
+                        <td>
+                            <input type="text" name ="firstname" placeholder="HNO"/>
+                            
+                        </td>
+                        <td>
+                            <input type="text" name ="firstname" placeholder="Street"/>
+                            
+                        </td>
+            
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" name ="firstname" placeholder="Area"/>
+                            
+                        </td>
+                        
+                    </tr>
+                </table>
+                <p>District</p>
+                <select name="cars" id="cars">
+                    <option value="Choose">Choose</option>
+                    <option value="saab">District1</option>
+                    <option value="mercedes">District2</option>
+                    <option value="audi">District3</option>
+                </select>
+                <p>3.Choose the test type</p>
+                <input type = "checkbox" name="CBC">
+                <label for="CBC">CBC</label></br>
+                <input type = "checkbox" name="CompleteUrine">
+                <label for="CompleteUrine">Complete Urine</label></br>
+                <input type = "checkbox" name="CBC">
+                <label for="CBC">Lipid Profile</label></br>
+                <input type = "checkbox" name="CBC">
+                <label for="CBC">Thyroid Stimulating Hormone</label></br>
+                <input type = "checkbox" name="CBC">
+                <label for="CBC">Glucose Test</label>
+                <p>4.Do you want the hardcopy of the report?</p>
+                <input type = "checkbox" name="CBC">
+                <label for="CBC">Yes</label></br>
+                <input type = "checkbox" name="CBC">
+                <label for="CBC">No</label>
+                <p>5.Select Your Comfortable Date and time</p>
+                <table>
+                    <tr>
+                        <td><input type="text" name ="firstname" placeholder="Date"/></td>
+                        <td><input type="text" name ="firstname" placeholder="Time"/></td>
+                    </tr>
+                </table>
+
+    </div>
+    <div class="right">
+      <img src="./Images/Lab-Test/lab-test.jpg" height="500px" width="100%">
+
+    </div>
+    
+  </div>
+  </br>
+  <div class="submit">
+    <button>Submit</button>
+    <button>Reset</button>
+  </div>
+    
+    
+
+</body>
+</html>
